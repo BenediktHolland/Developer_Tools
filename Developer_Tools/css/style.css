@@ -1,0 +1,389 @@
+
+body {
+    margin: 0;
+    background-color: white;
+
+}
+
+
+.grid-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 250px 400px 400px 400px 400px 400px 150px 300px 175px ;
+    grid-template-areas:
+        "header header header"
+        "bild1 content1 sidebar"
+        "bild1 content1 sidebar"
+        "h3 h3 h3"
+        "bild2 content2 content2"
+        "content3 content3 bild3"
+        "bild4 content4 content4" 
+        "content5 content5 bild5"
+        "bild6 content6 content6"
+        "footer footer footer"
+    ;
+
+    row-gap: 200px;
+
+
+
+}
+
+
+.header {
+    color: white;
+    margin-top: 0px;
+    background-color: black;
+    text-align: left;
+    display: flex;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-right: 25px;
+    justify-content: space-between;
+
+
+    grid-area: header;
+
+}
+
+h1 {
+    font-size: 35px;
+    grid-area: sidebar;
+    font-family: sans-serif;
+}
+
+nav ul {
+    font-family: 'IBM Plex Mono', monospace;
+    padding-top: 50px;
+    list-style: none;
+
+
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.Titelfoto {
+    background-color: gray;
+    margin-left: 25px;
+    overflow: hidden;
+
+    grid-area: bild1;
+}
+
+.Titelfoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textbox1 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+
+    grid-column: 2 / span 2;
+    grid-row: 2/ span 3;
+}
+
+
+.content1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    margin-top: 120px;
+    padding-right: 25px;
+    grid-area: sidebar;
+    margin-left: 400px;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+.textbox1 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 400px;
+    grid-area: sidebar;
+}
+
+
+
+
+h3 {
+    font-size: 50px;
+    grid-area: h3;
+    text-align: center;
+    margin-top: 100px;
+    font-family: sans-serif;
+}
+
+
+
+
+.Foto1 {
+
+    background-color: gray;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    grid-area: bild2;
+
+}
+
+.Foto1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textbox2 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+    
+
+    grid-area: content2;
+}
+
+
+.content2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    margin-top: 200px;
+    padding-right: 25px;
+    margin-right: 25px;
+    margin-left: 400px;
+    margin-bottom: 0;
+}
+
+.textbox2 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 25px;
+    margin-left: 400px;
+}
+
+
+
+
+.Foto2 {
+
+    background-color: gray;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    grid-area: bild3;
+
+}
+
+.Foto2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textbox3 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+
+    grid-area: content3;
+}
+
+
+.content3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    padding-right: 25px;
+    margin-right: 400px;
+    margin-left: 25px;
+    margin-bottom: 0;
+    margin-top: 200px;
+}
+
+.textbox3 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 200px;
+    margin-left: 25px;
+}
+
+
+
+
+
+.Foto3 {
+
+    background-color: gray;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    grid-area: bild4;
+
+}
+
+.Foto3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textbox4 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+
+    grid-area: content4;
+}
+
+
+.content4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    margin-top: 250px;
+    padding-right: 25px;
+    margin-right: 25px;
+    margin-left: 400px;
+    margin-bottom: 0;
+}
+
+.textbox4 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 25px;
+    margin-left: 400px;
+}
+
+
+
+
+.Foto4 {
+
+    background-color: gray;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    grid-area: bild5;
+
+}
+
+.Foto4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textbox5 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+
+    grid-area: content5;
+}
+
+
+.content5 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    margin-top: 250px;
+    padding-right: 25px;
+    margin-right: 200px;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+.textbox5 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 200px;
+    margin-left: 25px;
+}
+
+
+
+.Foto5 {
+
+    background-color: gray;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    grid-area: bild6;
+
+}
+
+.Foto5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textbox6 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+
+    grid-area: content6;
+}
+
+
+.content6 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    margin-top: 230px;
+    padding-right: 25px;
+    margin-right: 25px;
+    margin-left: 400px;
+    margin-bottom: 0;
+}
+
+.textbox6 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 25px;
+    margin-left: 400px;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    grid-area: footer;
+}

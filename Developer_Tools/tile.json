@@ -1,0 +1,9 @@
+{
+    "title": "Developer Tools",
+    "folder": "Developer_Tools",
+    "description": "Developer Tools sind eine Gruppe von Software-Tools, die Entwicklern dabei helfen, effektiver, effizienter und qualitativ hochwertiger zu programmieren. Diese Werkzeuge können Texteditoren, IDEs, Versionskontrollsysteme, Debugging-Tools, Performance-Tools und Build-Tools umfassen.",
+    "tags": ["Softwareentwicklung", "Versionskontrolle", "Internet"],
+    "author": "Benedikt Holland",
+    "github": "https://github.com/BenediktHolland/Developer_Tools"
+    
+    }
